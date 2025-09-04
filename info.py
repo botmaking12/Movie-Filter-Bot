@@ -14,18 +14,18 @@ def is_enabled(value, default):
     
 # Main
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+API_ID = int(environ.get('API_ID', '25935455'))
+API_HASH = environ.get('API_HASH', '47cb45d81d6e23bfc68671ea78cc6f9c')
+BOT_TOKEN = environ.get('BOT_TOKEN', '8325706859:AAELbCsjUlNzCbKfa4YmnGM6eWQlX71FOEA')
 PORT = environ.get('PORT', '8082')
 
 # Owners 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5672857559').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1278626587').split()]
 OWNER_USERNAME = environ.get('OWNER_USERNAME', 'IM_JISSHU') # without @ or https://t.me/ 
 USERNAME = environ.get('USERNAME', "") # ADMIN USERNAME
 
 # Database Channel 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002619448981').split()]
 
 # ForceSub Channel & Log Channels
 AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', ''))
@@ -35,8 +35,8 @@ LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
 
 # MongoDB 
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://rathv:rathv@rathv.mxyrgyb.mongodb.net/?retryWrites=true&w=majority&appName=rathv")
+DATABASE_NAME = environ.get('DATABASE_NAME', "rathv")
 
 # Files index database url
 FILES_DATABASE = environ.get('FILES_DATABASE', "")
